@@ -28,8 +28,8 @@ body {
   overflow-x: hidden;
 }
 
-.page {
-  padding-top: 4.25rem;
+main {
+  padding-top: 4rem;
 }
 
 .wrapper {
@@ -37,7 +37,7 @@ body {
   padding-left: 2rem; 
 }
 
-.page-container {
+.page-content {
    display: grid;
    gap: 2rem;
    grid-template-columns: 1fr;
@@ -46,8 +46,8 @@ body {
 }
 
 section {
-  /* padding-top: 2rem;
-  padding-bottom: 2rem; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .footer {
@@ -85,14 +85,12 @@ section {
   border-color: var(--bs-success);
 }
 
-.header-menu-icon {
-  width: 30px;
-  height: 30px;
-  fill: var(--bs-primary);
+.navbar-toggler svg {
+   stroke: var(--bs-primary);
 }
 
 @media (min-width: 768px) {
-  .page {
+  main {
     padding-bottom: 4rem;
   }
 
@@ -101,7 +99,7 @@ section {
     padding-left: 4rem; 
   }
 
-  .page-container {
+  .page-content {
     padding-right: 4rem;
     padding-left: 4rem;     
   }
@@ -114,11 +112,11 @@ section {
 }
 
 @media (min-width: 992px) {
-  #header-container {
+  #headerContainer {
     position: relative;
   }
 
-  #header-container:after {
+  #headerContainer:after {
     position: absolute;
     content: "";
     left: 0;
@@ -155,7 +153,7 @@ section {
     z-index: 1;
   }
 
-  .page-container {
+  .page-content {
     grid-template-columns: 30vw 1fr;
     padding-right: 4rem; 
     padding-left: 0;  
@@ -176,10 +174,6 @@ section {
     width: 100%;
     height: auto;
   }
-
-  .page {
-    padding-top: 3.75rem;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -188,7 +182,7 @@ section {
     padding-left: 9rem; 
   }
 
-  .page-container {
+  .page-content {
     padding-right: 9rem; 
   }
 
@@ -296,6 +290,3 @@ section {
   fill: currentColor;
 }
 
-.contacts-block .card {
-  max-width: 300px;
-}

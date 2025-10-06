@@ -281,3 +281,7 @@ body {
   max-width: 300px;
 }
 
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}

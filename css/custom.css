@@ -285,3 +285,25 @@ body {
     text-decoration: none;
     color: inherit;
 }
+
+.contacts-table {
+  /* width: auto !important;
+  min-width: 100%; */
+  white-space: nowrap;
+}
+
+.page-container {
+    max-width: 100%; 
+    overflow: hidden; 
+}
+
+/* Якщо це не спрацює, спробуйте також додати до .contacts */
+.contacts {
+    min-width: 0; /* Допомагає flex-елементам коректно стискатися */
+    max-width: 100%;
+}
+
+/* Переконайтеся, що обгортка таблиці має min-width */
+.table-responsive {
+    min-width: 100%;
+}

@@ -1,0 +1,309 @@
+  /*Custom styles*/
+
+:root {
+  /* Fonts */
+  --bs-body-font-family: "Baloo 2", var(--bs-font-sans-serif);
+
+  /*Colors*/
+  --bs-primary: #007a9b;
+  --bs-primary-rgb: 0, 122, 155;
+  --bs-success: #aebd14;
+  --bs-success-rgb: 174, 189, 20;
+}
+
+body {
+  overflow-wrap: break-word;
+}
+
+.text-brand-blue {
+  color: var(--bs-primary) !important;
+}
+
+.bg-brand-blue {
+  background-color: var(--bs-primary) !important;
+}
+
+.border-brand-blue {
+  border-color: var(--bs-primary) !important;
+}
+
+.text-brand-green {
+  color: var(--bs-success) !important;
+}
+
+.bg-brand-green {
+  background-color: var(--bs-success) !important;
+}
+
+.border-brand-green {
+  border-color: var(--bs-success) !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.page {
+  padding-top: 4.25rem;
+}
+
+.wrapper {
+  padding-right: 2rem;
+  padding-left: 2rem; 
+}
+
+.page-container {
+   display: grid;
+   gap: 2rem;
+   grid-template-columns: 1fr;
+   padding-right: 2rem;
+   padding-left: 2rem;
+}
+
+.aside {
+  display: none;
+}
+
+.navbar {
+  border-bottom: 2px solid var(--bs-success);
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+  height: auto;
+  width: auto;
+}
+
+.navbar-toggler {
+  border-color: var(--bs-success);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  border-color: var(--bs-success);
+}
+
+.header-menu-icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--bs-primary);
+}
+
+.footer {
+  background-color: var(--bs-primary);
+}
+
+.footer span {
+   font-weight: 500 !important;
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding-bottom: 4rem;
+  }
+
+  .wrapper {
+    padding-right: 4rem;
+    padding-left: 4rem; 
+  }
+
+  .page-container {
+    padding-right: 4rem;
+    padding-left: 4rem;     
+  }
+  .footer {
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+    z-index: 1030;
+  }
+}
+
+@media (min-width: 992px) {
+  #header-container {
+    position: relative;
+  }
+
+  #header-container:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--bs-success);
+    z-index: 0;
+  }
+
+  .navbar {
+    border-bottom-color: transparent;
+  }
+
+  .nav-item {
+    position: relative;
+    border: 2px solid transparent;
+  }
+
+  .nav-item:has(.nav-link.active) {    
+    border-left-color: var(--bs-success);
+    border-right-color: var(--bs-success);
+    border-top-color: var(--bs-success);
+  }
+
+  .nav-item:has(.nav-link.active)::after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background-color:  var(--bs-white);
+    z-index: 1;
+  }
+
+  .page {
+    padding-top: 3.75rem;
+  }
+
+  .page-container {
+    grid-template-columns: 30vw 1fr;
+    padding-right: 4rem; 
+    padding-left: 0;  
+  }
+
+  .aside {
+    height: 100%;
+    position: fixed;
+    width: 30vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 4rem;
+  }
+
+  .aside img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    padding-right: 9rem;
+    padding-left: 9rem; 
+  }
+
+  .page-container {
+    padding-right: 9rem; 
+  }
+
+  .aside {
+    padding-left: 9rem;
+  }
+}
+
+/* Services */
+
+.services-brand img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+.services-items {
+  max-width: 85%;
+}
+
+.services .card-body {
+  overflow-wrap: normal;
+  word-break: normal;   
+  hyphens: none;
+}
+
+.services-text-item {
+  height: 100% !important;
+}
+
+.services-item-title {
+  margin-top: 2.5rem;
+}
+
+
+@media (min-width: 576px) {
+  .services-items {
+    max-width: 100%;
+  }
+
+  .services-item-title-start {
+    justify-content: flex-start !important;
+  }
+
+  .services-item-title-end {
+    justify-content: flex-end !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .services-items {
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 992px) {
+  .services-items {
+    max-width: 100%;
+  }
+  .services-item-title {
+  margin-top: 0.5rem;
+}
+}
+
+@media (min-width: 1400px) {
+  .services-items {
+    max-width: 85%;
+  }
+}
+
+
+/* Contacts */
+.contacts-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.contacts-block .card {
+  max-width: 300px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contacts-table {
+  /* width: auto !important;
+  min-width: 100%; */
+  white-space: nowrap;
+}
+
+.page-container {
+    max-width: 100%; 
+    overflow: hidden; 
+}
+
+/* Якщо це не спрацює, спробуйте також додати до .contacts */
+.contacts {
+    min-width: 0; /* Допомагає flex-елементам коректно стискатися */
+    max-width: 100%;
+}
+
+/* Переконайтеся, що обгортка таблиці має min-width */
+.table-responsive {
+    min-width: 100%;
+}
